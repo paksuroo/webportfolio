@@ -10,7 +10,13 @@
 	font-size: 20px;
 }
 
-#home{
+nav ul li a:hover{
+	background: #c3b091;
+	color: #fff;
+	transition: .6s;
+}
+
+#landing{
 	background: var(--Background, #F9F1F0);
 
 }
