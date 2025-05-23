@@ -5,25 +5,71 @@
 }
 
 #navbar{
-	background: #987554;
 	font-weight: 500;
 	font-size: 20px;
 }
 
 nav ul li a:hover{
-	background: #c3b091;
+
+	background: #000000;
 	color: #fff;
-	transition: .6s;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+.navbar-logo {
+  height: 45px;      /* Adjust to fit perfectly */
+  width: auto;       /* Maintain aspect ratio */
+  max-height: 100%;  /* Prevent overflow */
+  margin-right: 10px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px #f8f9fa);
+    cursor: pointer;
+  }
+
+@media (max-width: 991.98px) {
+  #navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  #navbar .navbar-collapse {
+    background-color: rgba(33, 37, 41, 0.98);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  #navbar .nav-link {
+    padding: 0.75rem 1rem !important;
+    margin: 0.25rem 0;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(255,255,255,0.25);
+  }
 }
 
 #landing{
-	background: var(--Background, #F9F1F0);
+	background: #f0ead6;
 
 }
 
 #home-image{
 	
-    background-image: url("./images/bailey2.png");    
+  background-image: url("./images/bailey2.png");    
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -37,7 +83,6 @@ nav ul li a:hover{
 	line-height: 100%;
 	letter-spacing: 0%;
 	color: #000000;
-
 }
 
 #home-text{
@@ -49,38 +94,124 @@ nav ul li a:hover{
 	color: #000000;
 }
 
-#services{
-	background: #341a0e;
+#projects h3{
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 100%;
+	letter-spacing: 0%;
 }
 
+.project-tools-contact-wrapper {
+  background-image: url('./images/section2bg.jpg'); /* adjust path if needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* change to 'fixed' if needed */
+  position: relative;
+  z-index: 1;
+}
 
-#tools{
+.project-tools-contact-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.project-tools-contact-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+#gifs{
+	height: 65px;	
+}
+
+.carousel {
+  max-width: 100%;
+}
+
+.carousel-border {
+	height: 650px;
+  overflow-y: auto;
+  border: 2px solid #ffffff; /* or any color you want */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff; /* optional for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+  height: 350px;
+  object-fit: cover;
+  margin: 10px auto 15px auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.carousel-item p {
+  margin: 0 0 10px;
+}
+
+.skill-icon {
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#tools-section{
 	font-family: Montserrat;
-	font-weight: 600;
-	font-size: 35px;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 100%;
+	letter-spacing: 0%;
 }
 
 #tools-list{	
 	font-family: Montserrat;
-	font-weight: 600;
-	font-size: 25px;
-	border: 2px solid #000000
+	font-weight: 650;
+	font-size: 30px;
+}
+
+.border-tools {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.col-md-3 {
+  margin: 10px 15px;
+}
+
+/*#contact{
 	
+  background: url('./images/bg4.jpeg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
+*/
 
-#projects{
-	background: #d6c6b4;
+#contact h3{
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 100%;
+	letter-spacing: 0%;
 }
-
-#tools-section{
-	background: var(--Background, #F9F1F0);
-}
-
-
-#contact{
-	background: #341a0e;
-}
-
 
 #submit-button{
 	font-family: Montserrat;
@@ -103,8 +234,53 @@ nav ul li a:hover{
 }
 
 #footer{
-	background: #9B7350;
-	font-weight: 500;
-	font-size: 15px;
+	background: #fff;
+	font-weight: 400;
+	font-size: 12px;
 	color: #000000;
 }
+
+.bordered-text {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 2px solid #fff; /* White or use #000 for black */
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.4); /* Optional: semi-transparent bg */
+}
+
+.bordered-text:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-wrapper {
+  border: 1px solid #000; /* or any border color you prefer */
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 20px auto;
+  max-width: 900px;
+  
+  background-image: url('./images/contact3.png'); /* update with your actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  color: #fff; /* ensures text stays visible on the image */
+}
+
+/*.contact-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.contact-wrapper {
+  position: relative;
+  z-index: 1;
+}*/
