@@ -16,12 +16,14 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2" id="navbar">
-	  <div class="container-fluid">
-	    <a class="navbar-brand fw-bold d-flex align-items-center" href="#landing">
-	      <img src="./images/hireme1.png" class="navbar-logo me-2" alt="Hire Me Logo">
+	<nav class="navbar navbar-expand-lg navbar-dark py-2" id="navbar">
+	  <div class="container-fluid d-flex justify-content-between align-items-center">
+	    <!-- Logo on far left -->
+	    <a class="navbar-brand fw-bold d-flex align-items-center me-auto" href="#landing">
+	      <img src="./images/hireme.gif" class="navbar-logo" alt="Hire Me Logo">
 	    </a>
-	    
+
+	    <!-- Toggler -->
 	    <button class="navbar-toggler" 
 	            type="button" 
 	            data-bs-toggle="collapse" 
@@ -32,67 +34,69 @@
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 
-	    <div class="collapse navbar-collapse bg-dark bg-lg-transparent px-3 px-lg-0" id="navbarNav">
-	      <ul class="navbar-nav ms-auto">
-	        <li class="nav-item">
-	          <a class="nav-link text-white mx-2" href="#landing">Home</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link text-white mx-2" href="#projects">My Projects</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link text-white mx-2" href="#tools">Tools</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link text-white mx-2" href="#contact">Contact</a>
-	        </li>
+	    <!-- Nav links on the far right -->
+	    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item"><a class="nav-link text-white mx-2" href="#landing">HOME</a></li>
+	        <li class="nav-item"><a class="nav-link text-white mx-2" href="#projects">PROJECTS</a></li>
+	        <li class="nav-item"><a class="nav-link text-white mx-2" href="#tools">TOOLS</a></li>
+	        <li class="nav-item"><a class="nav-link text-white" href="#contact">CONTACT</a></li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
 
-	<!-- Landing -->
-  <div class="container-fluid" id="landing">
 
-	    <div class="row d-flex align-items-center justify-content-center pt-2">
-	    
-	      <div class="container-fluid" id="landing">
-	        <div class="row d-flex align-items-center justify-content-center pt-2">
-	          <div class="col-12 col-md-6 col-lg-5 text-start">
-	            <h3 class="mb-4 mt-3">Hi! I am</h3>
-	            <h1>John Raymond Pesino</h1>
-	            <h3>Full Stack Web Developer</h3>
-	            <p>(Born in the year 1995) a Filipino aspiring full stack web developer and former e-sport athlete. He grew up during a time known for its blend of cultural richness and emerging technology. A fan of TV shows, animated series, manga, and webtoons, his interests influence both his creative and technical pursuits.</p>
-	            	            
-	            <div class="d-flex gap-4 mt-4">
-	              <a href="https://github.com/" target="_blank" class="social-icon">
-	                <img src="./images/github.png" alt="GitHub" style="height: 35px;">
-	              </a>
-	              <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
-	                <img src="./images/linkedin.png" alt="LinkedIn" style="height: 35px;">
-	              </a>
-	              <a href="https://about.gitlab.com/" target="_blank" class="social-icon">
-	                <img src="./images/gitlab.png" alt="GitLab" style="height: 35px;">
-	              </a>
-	            </div>
-	          </div>
-	           
-	          <div class="col-12 col-md-6 col-lg-4 text-center align-items-center">
-	            <img src="./images/prof2.png" class="img-fluid">
-	          </div>
-	        </div>
-	      </div>
-	  </div>
-	</div>
+<!-- LANDING -->
+
+<div class="pagebg-wrapper">
+  <div class="container landing-container py-5" id="landing">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="text-box d-flex flex-column flex-md-row align-items-center justify-content-between">
+          
+          <!-- TEXT LEFT on md+, BELOW on sm -->
+          <div class="landing-text order-2 order-md-1">
+            <h3 class="pb-3 text-center text-md-start">Hi, I am</h3>
+            <h1 class="pb-1 text-center text-md-start">John Raymond L. Pesino</h1>
+            <h4 class="text-center text-md-start mb-3">Full Stack Web Developer</h4>
+            <p class="pt-2 text-justify">
+              (Born in the year 1995) a Filipino aspiring full stack web developer and former e-sport athlete. He grew up during a time known for its blend of cultural richness and emerging technology. A fan of TV shows, animated series, manga, and webtoons, his interests influence both his creative and technical pursuits.
+            </p>
+
+            <div class="d-flex justify-content-center justify-content-md-start gap-3">
+              <a href="https://github.com/" target="_blank">
+                <img src="./images/github.png" alt="GitHub" class="social-icon">
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="./images/linkedin.png" alt="LinkedIn" class="social-icon">
+              </a>
+              <a href="https://about.gitlab.com/" target="_blank">
+                <img src="./images/gitlab.png" alt="GitLab" class="social-icon">
+              </a>
+            </div>
+          </div>
+
+          <!-- IMAGE RIGHT on md+, TOP on sm -->
+          <div class="landing-img-wrapper order-1 order-md-2 mb-md-0 d-flex justify-content-center">
+            <img src="./images/prof2.png" alt="Profile" class="landing-img">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Projects -->
-<div class="project-tools-contact-wrapper pt-2 pb-5">
+<div class="pagebg-wrapper pt-2 pb-5">
 <div id="projects" class="container-fluid py-3 w-100 text-dark">
     <section class="d-flex align-items-center justify-content-center text-center m-3">
-      <h3 class="text-white mx-3">
-        <span class="bordered-text">My Projects</span>
-      </h3>
-      <img src="./images/gear.gif" id="gifs" alt="Gear Icon">
+    	<div class="section-title">
+      <h2 class="text-white mx-3">
+        <span class="bordered-text">PROJECTS</span>
+      </h2>
+      </div>      
     </section>
 	<div class="container">
 		  <div class="row text-center">
@@ -205,85 +209,132 @@
 </div>
 
 <!-- Tools Section -->
-<section id="tools" class="container-fluid text-center text-white p-3 px-5 px-md-4">
-    <div class="d-flex align-items-center justify-content-center text-center m-3">
-      <h3 id="tools-section" class="text-white mb-3">
-        <span class="bordered-text">Tools</span>
-      </h3>
-      <img src="./images/tools.gif" id="gifs" alt="toolbox" class="pb-3">
-    </div>
-	
-  <div class="row justify-content-center gy-4">
+<div class="pagebg-wrapper">
+  <section class="skills-section" id="tools">
+	  <div class="container">
+	      <div class="section-title">
+	          <h2><span class="bordered-text">TOOLS</span></h2>
+	          <p class="lead">Technologies I work with</p>
+	      </div>
 
-    <!-- Front End -->
-    <div class="col-md-5 col-lg-2 border-tools mx-2">
-      <h3 class="mb-4 text-dark">FRONT END</h3>
-      <div class="row g-3 justify-content-center">
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/html.png" class="img-fluid skill-icon" alt="HTML">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/css.png" class="img-fluid skill-icon" alt="CSS">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/bootstrap.png" class="img-fluid skill-icon" alt="Bootstrap">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/javascript.png" class="img-fluid skill-icon" alt="JavaScript">
-        </div>
-      </div>
-    </div>
+	      <!-- FRONT END -->
+	      <div class="mb-5">
+	          <h4 class="mb-3 d-flex justify-content-center align-items-center mb-4">FRONT END</h4>
+	          <div class="row g-5 justify-content-center">
+	              <!-- HTML5 -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/html.png" alt="HTML5">
+	                      <h4 class="skill-name">HTML5</h4>
+	                  </div>
+	              </div>
+	              <!-- CSS3 -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/css.png" alt="CSS3">
+	                      <h4 class="skill-name">CSS3</h4>
+	                  </div>
+	              </div>
+	              <!-- Bootstrap -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/bootstrap.png" alt="Bootstrap">
+	                      <h4 class="skill-name">Bootstrap</h4>
+	                  </div>
+	              </div>
+	              <!-- JavaScript -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/javascript.png" alt="JavaScript">
+	                      <h4 class="skill-name">JavaScript</h4>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
 
-    <!-- MERN -->
-    <div class="col-md-5 col-lg-2 border-tools mx-2">
-      <h3 class="mb-4 text-dark">MERN</h3>
-      <div class="row g-3 justify-content-center">
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/mongodb.png" class="img-fluid skill-icon" alt="MongoDB">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/expressjs.png" class="img-fluid skill-icon" alt="Express">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/reactjs.png" class="img-fluid skill-icon" alt="React">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/nodejs.png" class="img-fluid skill-icon" alt="Node.js">
-        </div>
-      </div>
-    </div>
+	      <!-- MERN STACK -->
+	      <div class="mb-5">
+	          <h4 class="mb-3 d-flex justify-content-center align-items-center mb-4">MERN</h4>
+	          <div class="row g-5 justify-content-center">
+	              <!-- HTML5 -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/mongodb.png" alt="HTML5">
+	                      <h4 class="skill-name">MongoDB</h4>
+	                  </div>
+	              </div>
+	              <!-- CSS3 -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/expressjs.png" alt="CSS3">
+	                      <h4 class="skill-name">ExpressJS</h4>
+	                  </div>
+	              </div>
+	              <!-- Bootstrap -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/reactjs.png" alt="Bootstrap">
+	                      <h4 class="skill-name">ReactJS</h4>
+	                  </div>
+	              </div>
+	              <!-- JavaScript -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/nodejs.png" alt="JavaScript">
+	                      <h4 class="skill-name">NodeJS</h4>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
 
-    <!-- Other Tools -->
-    <div class="col-md-5 col-lg-2 border-tools mx-2">
-      <h3 class="mb-4 text-dark">OTHER TOOLS</h3>
-      <div class="row g-3 justify-content-center">
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/heroku.png" class="img-fluid skill-icon" alt="Heroku">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/git.png" class="img-fluid skill-icon" alt="Git">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/postman.png" class="img-fluid skill-icon" alt="Postman">
-        </div>
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <img src="./images/sublimetext.png" class="img-fluid skill-icon" alt="Sublime Text">
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+	      <!-- OTHER TOOLS -->
+	      <div>
+	          <h4 class="mb-3 d-flex justify-content-center align-items-center mb-4">OTHER TOOLS</h4>
+	          <div class="row g-5 justify-content-center">
+	              <!-- HTML5 -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/heroku.png" alt="HTML5">
+	                      <h4 class="heroku">Heroku</h4>
+	                  </div>
+	              </div>
+	              <!-- CSS3 -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/git.png" alt="CSS3">
+	                      <h4 class="skill-name">Git</h4>
+	                  </div>
+	              </div>
+	              <!-- Bootstrap -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/postman.png" alt="Bootstrap">
+	                      <h4 class="skill-name">Postman</h4>
+	                  </div>
+	              </div>
+	              <!-- JavaScript -->
+	              <div class="col-5 col-md-3 col-lg-2 d-flex justify-content-center mb-2">
+	                  <div class="skill-card">
+	                      <img src="./images/sublimetext.png" alt="JavaScript">
+	                      <h4 class="skill-name">SublimeText</h4>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+	  </div>
+	</section>
+</div>
 
 			   
  <!-- contact section -->
  <div class="contact-wrapper">
   <section id="contact" class="container py-3 text-white">
  			<div class="d-flex align-items-center justify-content-center text-center m-3">
- 			  <h3 class="text-white mx-3">
- 			    <span class="bordered-text mb-2">Contact</span>
- 			  </h3>
- 			  <img src="./images/call.gif" id="gifs" alt="call us" class="pb-3">
+ 				<div class="section-title">
+ 			  <h2 class="text-white mx-3">
+ 			    <span class="bordered-text mb-2">CONTACT</span>
+ 			  </h2> 
+ 			  </div>			  
  			</div>
 		  
 		  <div class="container">
@@ -322,12 +373,14 @@
 	</div>
 </div>
 
-			<!-- footer section -->
-		<div>
-			<footer id="footer" class="d-block justify-content-center text-center d-grid py-2">
-			  <div>John Raymond Pesino | Full Stack Web Developer</div>
-			  <div>&copy; All Rights Reserved 2025</div>
-			</footer>
+<!-- footer section -->
+<div>
+	<footer id="footer" class="justify-content-center text-center">
+		<a href="#navbar" class="back-to-top">Back to Top ↑</a>
+	  <div class="mt-3">John Raymond Pesino | Full Stack Web Developer</div>
+	  <div>&copy; All Rights Reserved 2025</div>
+	</footer>
+</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
