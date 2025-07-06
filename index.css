@@ -29,6 +29,18 @@
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+.navbar-logo:hover {
+  color: #000 !important;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+              rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+              rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+              rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 #navbar .nav-link {
   color: white !important;
   margin: 0 12px;
@@ -64,7 +76,7 @@
   border-radius: 12px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
   color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
   padding: 20px;
 }
 
