@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Raymond Pesino - Resume</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* Solid white background */
+      font-family: Arial, sans-serif;
+    }
+
+    .resume-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff; /* Ensures full white background */
+    }
+
+    .pdf-viewer {
+      flex: 1;
+      border: none;
+      background-color: #ffffff; /* White background for PDF viewer */
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f8f9fa;
+      border-top: 1px solid #e9ecef;
+    }
+
+    /* Disable text selection */
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .resume-container {
+        height: auto;
+        min-height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <iframe 
+      class="pdf-viewer" 
+      src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+      type="application/pdf"
+      title="John Raymond Pesino's Resume"
+    ></iframe>
+    <div class="footer">
+      <small>© 2024 John Raymond Pesino. All rights reserved.</small>
+    </div>
+  </div>
+
+  <script>
+    // Disable right-click (optional)
+    document.addEventListener('contextmenu', function(e) {
+      if (e.target.tagName === 'IFRAME') {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
